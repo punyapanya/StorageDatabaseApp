@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">StorageDatabaseApp</string>
+
+    <string name="material_name_style_template"><b>Material:</b> %1$s, <b>Style:</b> %2$s</string>
+    <string name="material_quantity_template"><b>Quantity:</b> %1$d</string>
+    <string name="material_id_template"><b>Id:</b> %1$d</string>
+
+    <string name="request_requested_id"><b>Requested material id:</b> %1$d</string>
+    <string name="request_from_template"><b>From:</b> %1$s</string>
+    <string name="request_quantity_template"><b>Requested quantity:</b> %1$d</string>
+    <string name="request_date_template"><b>Date:</b> %1$s</string>
+    <string name="request_status_template"><b>Confirmation:</b> %1$s</string>
+
+    <string name="materials">Materials</string>
+    <string name="all">All</string>
+    <string name="in_stock">In stock</string>
+    <string name="not_in_stock">Not in stock</string>
+    <string name="not_ordered">Not ordered</string>
+    <string name="with_refuses">With refuses</string>
+    <string name="dialog_title_choose_materials">Choose materials to show:</string>
+    <string name="order_requests">Order requests</string>
+    <string name="receiving_requests">Receiving requests</string>
+    <string name="material_type">Material type:</string>
+    <string name="material_style">Material style:</string>
+    <string name="add">Add</string>
+    <string name="add_material">Add new material</string>
+    <string name="click_here_to_open_the_tab">Click here to open the tab</string>
+    <string name="click_here_to_close_the_tab">Click here to close the tab</string>
+    <string name="enter_material_type_here">Enter material type here</string>
+    <string name="new_material_created">New material was created</string>
+    <string name="new_request_created">New request was created</string>
+    <string name="error_material_created">Error, material was not created</string>
+    <string name="error_request_created">Error, request was not created</string>
+    <string name="add_new_request">Add new request</string>
+    <string name="enter_quantity_of_materials_here">Enter quantity of materials here</string>
+    <string name="enter_requested_material_id">Enter requested material id</string>
+    <string name="order">Order</string>
+    <string name="receiving">Receiving</string>
+    <string name="requests">Requests</string>
+</resources>

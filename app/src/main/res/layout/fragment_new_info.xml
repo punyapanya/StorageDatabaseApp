@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvMaterialInput"
+            style="@style/card"
+            app:cardBackgroundColor="@color/whiteish"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/blue_light"
+            app:strokeWidth="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/staticViewMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleAddMaterial"
+                        style="@style/title_big"
+                        android:text="@string/add_material"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivExpandMaterial"
+                        style="@style/toolbar_icon"
+                        android:src="@drawable/ic_expand_more"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAddMaterial" />
+
+                    <TextView
+                        android:id="@+id/tvClickToTabMaterial"
+                        style="@style/title_gray"
+                        android:text="@string/click_here_to_open_the_tab"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAddMaterial" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black"
+                        app:layout_constraintTop_toBottomOf="@+id/ivExpandMaterial" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/expandableViewMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:visibility="gone">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/etMaterialType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:completionThreshold="0"
+                        android:hint="@string/enter_material_type_here"
+                        android:inputType="textAutoComplete"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnMaterialStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/etMaterialType" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"
+                        app:layout_constraintTop_toBottomOf="@+id/spnMaterialStyle" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnAddMaterial"
+                        style="@style/btn_borderless"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/add"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/spnMaterialStyle" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvRequestInput"
+            style="@style/card"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/whiteish"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvMaterialInput"
+            app:strokeColor="@color/blue_light"
+            app:strokeWidth="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/staticViewRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleAddRequest"
+                        style="@style/title_big"
+                        android:text="@string/add_new_request"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivExpandRequest"
+                        style="@style/toolbar_icon"
+                        android:src="@drawable/ic_expand_more"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAddRequest" />
+
+                    <TextView
+                        android:id="@+id/tvClickToTabRequest"
+                        style="@style/title_gray"
+                        android:text="@string/click_here_to_open_the_tab"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAddRequest" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black"
+                        app:layout_constraintTop_toBottomOf="@+id/ivExpandRequest" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/expandableViewRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/cgRequestType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipGivingRequest"
+                            style="@style/chip_btn_colored"
+                            android:text="@string/order" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipTakingRequest"
+                            style="@style/chip_btn_colored"
+                            android:text="@string/receiving" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/etRequestMaterialId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:completionThreshold="0"
+                        android:hint="@string/enter_requested_material_id"
+                        android:inputType="numberSigned"
+                        android:maxLength="35"
+                        android:maxLines="1"
+                        app:layout_constraintTop_toBottomOf="@id/cgRequestType" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/etRequestQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:completionThreshold="0"
+                        android:hint="@string/enter_quantity_of_materials_here"
+                        android:inputType="numberSigned"
+                        android:maxLength="35"
+                        android:maxLines="1"
+                        app:layout_constraintTop_toBottomOf="@id/etRequestMaterialId" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnRequestPartners"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/etRequestQuantity" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"
+                        app:layout_constraintTop_toBottomOf="@+id/spnRequestPartners" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnAddRequest"
+                        style="@style/btn_borderless"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/add"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/spnRequestPartners" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

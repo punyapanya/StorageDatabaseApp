@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/materialsFragment">
+
+    <fragment
+        android:id="@+id/materialsFragment"
+        android:name="com.example.storagedatabaseapp.ui.fragments.materials.MaterialsFragment"
+        android:label="MaterialsFragment" >
+        <action
+            android:id="@+id/action_materialsFragment_to_materialDetailFragment"
+            app:destination="@id/materialDetailFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/newInfoFragment"
+        android:name="com.example.storagedatabaseapp.ui.fragments.newinfo.NewInfoFragment"
+        android:label="NewInfoFragment" />
+    <fragment
+        android:id="@+id/materialDetailFragment"
+        android:name="com.example.storagedatabaseapp.ui.fragments.materialdetail.MaterialDetailFragment"
+        android:label="fragment_material_detail"
+        tools:layout="@layout/fragment_material_detail" >
+        <argument
+            android:name="materialId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestsFragment"
+        android:name="com.example.storagedatabaseapp.ui.fragments.requests.RequestsFragment"
+        android:label="RequestsFragment" />
+</navigation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2962ff</color>
+    <color name="colorPrimaryDark">#0039cb</color>
+    <color name="colorAccent">#768fff</color>
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="gray">#BBB</color>
+    <color name="whiteish">#FAFAFA</color>
+    <color name="grayForIcons">#C7C7C7</color>
+
+    <color name="blue_primary">#2962ff</color>
+    <color name="blue_dark">#0039cb</color>
+    <color name="blue_light">#768fff</color>
+</resources>

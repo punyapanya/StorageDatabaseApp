@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/card"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginBottom="8dp"
+    app:strokeColor="@color/blue_dark"
+    app:strokeWidth="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/tvItemRequestedId"
+            style="@style/title_black"
+            android:ellipsize="end"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:text="@string/request_requested_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvItemFrom"
+            style="@style/title_black"
+            android:ellipsize="end"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:text="@string/request_from_template"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemRequestedId" />
+
+        <TextView
+            android:id="@+id/tvItemRequestedQuantity"
+            style="@style/title_black"
+            android:ellipsize="end"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:text="@string/request_quantity_template"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvItemFrom" />
+
+        <TextView
+            android:id="@+id/tvItemDate"
+            style="@style/title_black"
+            android:ellipsize="end"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:text="@string/request_date_template"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvItemRequestedQuantity" />
+
+        <TextView
+            android:id="@+id/tvItemStatus"
+            style="@style/title_black"
+            android:ellipsize="end"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:text="@string/request_status_template"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvItemDate" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

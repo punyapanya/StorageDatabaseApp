@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/materialsFragment"
+        android:icon="@drawable/ic_materials"
+        android:title="@string/materials" />
+
+    <item
+        android:id="@+id/requestsFragment"
+        android:icon="@drawable/ic_requests"
+        android:title="@string/requests" />
+
+    <item
+        android:id="@+id/newInfoFragment"
+        android:icon="@drawable/ic_add_info"
+        android:title="Add new info" />
+</menu>
